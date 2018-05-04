@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SUFE快递帮后台管理-校园认证审核</title>
+    <link rel="stylesheet" href="/files/admin/css/users.css">
+    <script type="text/javascript" src="http://himg2.huanqiu.com/statics/hq2013/js/lib/jquery1.9.1.js"></script>
+    <script src="/files/admin/js/users.js"></script>
+</head>
+<body>
+<% include common/top.ejs%>
+
+<table>
+    <tr>
+        <th class="id">ID</th>
+        <th class="name">姓名</th>
+        <th class="stu_id">学号</th>
+        <th class="phone">手机号</th>
+        <th class="card1">校园卡</th>
+        <th class="card2">学生证</th>
+        <th class="status">审核状态</th>
+        <th class="operation">操作</th>
+    </tr>
+    <% for(var i = 0;i<usersData.length;i++){%>
+    <tr>
+        <td><%=usersData[i].id%></td>
+        <td><%=usersData[i].stu_name%></td>
+        <td><%=usersData[i].stu_id%></td>
+        <td><%=usersData[i].phone%></td>
+        <td><img src="%=usersData[i].stu_campus_card_url%" alt=""></td>
+        <td><img src="%=usersData[i].stu_id_card_url%" alt=""></td>
+        <td><%=usersData[i].auth_status%></td>
+        <td>
+           <!--  <a href="?action=del&id=<%=usersData[i].ID%>" onclick="return confirm('确定删除？')">
+                <button>删除</button>
+            </a> -->
+            <a href="?action=mod&id=<%=usersData[i].id%>">
+                <button>审核通过</button>
+            </a>
+            <a href="?action=fail&id=<%=usersData[i].id%>">
+                <button>驳回</button>
+            </a>
+        </td>
+    </tr>
+    <%}%>
+</table>
+</body>
+</html>
