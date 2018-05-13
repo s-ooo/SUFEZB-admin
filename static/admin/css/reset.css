@@ -1,11 +1,5 @@
 @charset "utf-8";
-/*************************
-*
-* author:      Neal
-* version:     1.0
-* time:        2016-07-11
-*
-*************************/
+
 html { -webkit-overflow-scrolling: touch; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,body,div,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,legend,button,input,textarea,form,th,td { margin: 0; padding: 0; vertical-align: baseline}
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary { display: block}

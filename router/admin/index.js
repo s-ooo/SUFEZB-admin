@@ -1,6 +1,3 @@
-/**
- * Created by Nealyang on 17/2/25.
- */
 const express = require('express');
 
 module.exports = function () {
@@ -13,7 +10,6 @@ module.exports = function () {
         }
     });
     router.use('/login',require('./login')());
-    router.use('/blog',require('./blog')());
     router.use('/users',require('./users')());
     router.get('/',function (req,res) {
         res.render('admin/index.ejs');

@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <title>SUFE快递帮后台管理-校园认证审核</title>
     <link rel="stylesheet" href="/files/admin/css/users.css">
-    <script type="text/javascript" src="http://himg2.huanqiu.com/statics/hq2013/js/lib/jquery1.9.1.js"></script>
-    <script src="/files/admin/js/users.js"></script>
 </head>
 <body>
 <% include common/top.ejs%>
@@ -27,13 +25,10 @@
         <td><%=usersData[i].stu_name%></td>
         <td><%=usersData[i].stu_id%></td>
         <td><%=usersData[i].phone%></td>
-        <td><img src="%=usersData[i].stu_campus_card_url%" alt=""></td>
-        <td><img src="%=usersData[i].stu_id_card_url%" alt=""></td>
+        <td><img src="/files/admin/img/password_icon.png" alt=""></td>
+        <td><img src="/files/admin/img/password_icon.png" alt=""></td>
         <td><%=usersData[i].auth_status%></td>
         <td>
-           <!--  <a href="?action=del&id=<%=usersData[i].ID%>" onclick="return confirm('确定删除？')">
-                <button>删除</button>
-            </a> -->
             <a href="?action=mod&id=<%=usersData[i].id%>">
                 <button>审核通过</button>
             </a>

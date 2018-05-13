@@ -1,27 +1,4 @@
 {
-  "name": "ejs-express-mysql",
-  "version": "1.0.0",
-  "description": "ejs+express+mysql实现的后台管理",
-  "main": "server",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Nealyang/ejs-express-mysql.git"
-  },
-  "keywords": [
-    "node",
-    "express",
-    "ejs",
-    "mysql"
-  ],
-  "author": "Nealyang",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Nealyang/ejs-express-mysql/issues"
-  },
-  "homepage": "https://github.com/Nealyang/ejs-express-mysql#readme",
   "devDependencies": {
     "body-parser": "^1.16.1",
     "consolidate": "^0.14.5",

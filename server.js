@@ -1,7 +1,3 @@
-/**
- * Created by Nealyang on 17/2/25.
- */
-
 const express = require('express');
 const expressStatic = require('express-static');
 const bodyParser = require('body-parser');
@@ -33,7 +29,7 @@ server.use(cookieParser('Neal_signed'));
     server.use(cookieSession({
         name:'session_id',
         keys:arr,
-        maxAge:20*60*1000//一般我会设置20分钟，这里是为了感受session过期~~带来的快感~?(●´∀｀●)ﾉ
+        maxAge:20*60*1000
     }))
 })();
 
